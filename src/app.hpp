@@ -11,7 +11,8 @@ class app
     int x_;
     int y_;
           
-
+    int calculateWidth();
+    int calculateHegiht();
     public:
         app(int x, int y);
         void run();

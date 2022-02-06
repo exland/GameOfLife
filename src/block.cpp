@@ -8,18 +8,16 @@ Block::Block() :
 {
 }
 
-Block::Block(float width_arg, float weight_arg, float startX, float startY) :
+Block::Block(float width_arg, float height_arg, float startX, float startY, float angle) :
   width(width_arg),
-  height(weight_arg)
+  height(height_arg)
 {
   position.x = startX;
   position.y = startY;
-
-  colour = sf::Color::White;
-
   block.setSize(sf::Vector2f(width, height));
-  block.setFillColor(colour);
+  block.setFillColor(sf::Color::White);
   block.setPosition(position);
+  block.setRotation(angle);
 }
 
 Block::~Block() {

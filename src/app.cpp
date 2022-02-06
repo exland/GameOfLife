@@ -1,24 +1,37 @@
 #include "app.hpp"
+#include "blockContainer.h"
 
-#include <SFML/Graphics.hpp>
-#include <blockContainer.h>
 
-app::app(int x, int y)
+int app::calculateWidth()
+{
+    int retval = this->x_ / 5;
+    std::cout << retval << std::endl;
+    return retval;
+}
+
+int app::calculateHegiht()
+{
+    int retval =  this->y_/5;
+    std::cout << retval << std::endl;
+    return retval;
+
+}
+
+app::app(int x, int y):x_(x), y_(y)
 {
     std::cout << "created" << std::endl;
     this->x_ = x;
     this->y_ = y;
-    
+ 
 }
 
 void app::run()
 {  
     sf::RenderWindow window(sf::VideoMode(x_, y_), "GameOfLife");
-    sf::CircleShape square(6, 4);
+    ContainerOfBlocks vertical_lines(calculateWidth(), sf::Vector2f(1.0f, 0.0f), 0.0f,(float) y_);
+    ContainerOfBlocks horizontal_lines(calculateWidth(), sf::Vector2f(1.0f, 0.0f), -90.0f,(float) x_);
 
-    sf::Clock clock;
-    float lastTime = 0;
-
+    sf::CircleShape square(80, 4);
     square.setRotation(-45.f);
     square.setPosition(80.f,80.f);
 
@@ -38,12 +51,10 @@ void app::run()
     sprite.setTexture(texture);
     sprite.setPosition(100, 25);
     // Draw it
-     ContainerOfBlocks testBlocks(5, sf::Vector2f(10.0f, 10.0f)); 
+     
 
   // create another container, starting at pos 10/50
   // this one will be drawn using sf::Drawable's function to draw
-     ContainerOfBlocks testBlocks2(5, sf::Vector2f(10.0f, 50.0f)); 
-
       while (window.isOpen())
     {
         sf::Event event;
@@ -55,8 +66,8 @@ void app::run()
         window.clear();
         window.draw(sprite);
         window.draw(line);
-        testBlocks.drawContainer(window);
-        window.draw(testBlocks2);
+       horizontal_lines.drawContainer(window);
+       vertical_lines.drawContainer(window);
        // window.draw(*l);
        //window.draw(shape);
       //  window.draw(*l);

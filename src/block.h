@@ -6,7 +6,7 @@
 class Block : public sf::Drawable {
  public:
   Block();
-  Block(float width_arg, float height_arg, float startX, float startY);
+  Block(float width_arg, float height_arg, float startX, float startY, float angle);
   virtual ~Block();
 
  private:

@@ -6,7 +6,8 @@
 class ContainerOfBlocks : public sf::Drawable {
  public:
   ContainerOfBlocks();
-  ContainerOfBlocks(int useless, const sf::Vector2f pos);
+  ContainerOfBlocks(int useless, const sf::Vector2f pos, float angle, float lenght);
+  ContainerOfBlocks(int useless, const sf::Vector2f pos, float lenght);
   ~ContainerOfBlocks();
 
   std::vector<Block> &getContainer();
