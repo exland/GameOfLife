@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.o.dir/src/main.cpp.o CMakeFiles/main.o.dir/src/ContainerOfBlocks.cpp.o CMakeFiles/main.o.dir/src/agent.cpp.o CMakeFiles/main.o.dir/src/app.cpp.o CMakeFiles/main.o.dir/src/block.cpp.o -o main.o   -L/home/exland/Desktop/GameOfLife/src  -Wl,-rpath,/home/exland/Desktop/GameOfLife/src -lsfml-graphics -lsfml-window -lsfml-system 

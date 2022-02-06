@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/exland/Desktop/GameOfLife/src/ContainerOfBlocks.cpp
+blockContainer.h
+/home/exland/Desktop/GameOfLife/src/blockContainer.h
+
+/home/exland/Desktop/GameOfLife/src/app.cpp
+app.hpp
+/home/exland/Desktop/GameOfLife/src/app.hpp
+SFML/Graphics.hpp
+-
+blockContainer.h
+-
+
+/home/exland/Desktop/GameOfLife/src/app.hpp
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/exland/Desktop/GameOfLife/src/block.cpp
+block.h
+/home/exland/Desktop/GameOfLife/src/block.h
+
+/home/exland/Desktop/GameOfLife/src/block.h
+SFML/Graphics.hpp
+-
+
+/home/exland/Desktop/GameOfLife/src/blockContainer.h
+block.h
+/home/exland/Desktop/GameOfLife/src/block.h
+
+src/block.h
+SFML/Graphics.hpp
+-
+
+src/blockContainer.h
+block.h
+src/block.h
+
