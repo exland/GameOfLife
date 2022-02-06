@@ -6,23 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/exland/Desktop/GameOfLife/src/app.cpp
-app.hpp
-/home/exland/Desktop/GameOfLife/src/app.hpp
-blockContainer.h
-/home/exland/Desktop/GameOfLife/src/blockContainer.h
+/home/exland/Desktop/GameOfLife/src/agent.cpp
+agent.hpp
+/home/exland/Desktop/GameOfLife/src/agent.hpp
 
-/home/exland/Desktop/GameOfLife/src/app.hpp
+/home/exland/Desktop/GameOfLife/src/agent.hpp
 SFML/Graphics.hpp
 -
-iostream
--
-
-/home/exland/Desktop/GameOfLife/src/block.h
-SFML/Graphics.hpp
--
-
-/home/exland/Desktop/GameOfLife/src/blockContainer.h
-block.h
-/home/exland/Desktop/GameOfLife/src/block.h
 

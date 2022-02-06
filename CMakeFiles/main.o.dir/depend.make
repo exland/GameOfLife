@@ -6,6 +6,7 @@ CMakeFiles/main.o.dir/src/ContainerOfBlocks.cpp.o: src/block.h
 CMakeFiles/main.o.dir/src/ContainerOfBlocks.cpp.o: src/blockContainer.h
 
 CMakeFiles/main.o.dir/src/agent.cpp.o: src/agent.cpp
+CMakeFiles/main.o.dir/src/agent.cpp.o: src/agent.hpp
 
 CMakeFiles/main.o.dir/src/app.cpp.o: src/app.cpp
 CMakeFiles/main.o.dir/src/app.cpp.o: src/app.hpp

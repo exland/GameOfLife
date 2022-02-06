@@ -7,6 +7,7 @@ CMakeFiles/main.o.dir/src/ContainerOfBlocks.cpp.o
  /home/exland/Desktop/GameOfLife/src/blockContainer.h
 CMakeFiles/main.o.dir/src/agent.cpp.o
  /home/exland/Desktop/GameOfLife/src/agent.cpp
+ /home/exland/Desktop/GameOfLife/src/agent.hpp
 CMakeFiles/main.o.dir/src/app.cpp.o
  /home/exland/Desktop/GameOfLife/src/app.cpp
  /home/exland/Desktop/GameOfLife/src/app.hpp
